@@ -1,0 +1,133 @@
+{
+  "scheme_id": "top_class_sc",
+  "scheme_name": "Central Sector Scholarship of Top Class Education for SC Students",
+  "department": "Ministry of Social Justice and Empowerment",
+  "academic_year": "2026-27",
+  "description": "The Scheme aims at recognizing and promoting quality education amongst students belonging to SCs, by providing financial support for pursuing studies beyond 12th class.",
+  "official_sources": [
+    {
+      "source_id": "topclass_sc_web_2026",
+      "title": "Central Sector Scholarship of Top Class Education for SC Students Webpage",
+      "url": "https://socialjustice.gov.in/schemes/27",
+      "document_type": "web_page",
+      "applicable_year": "2026-27",
+      "last_verified": "2026-08-19",
+      "retrieved_at": "2026-08-19T15:30:00+05:30",
+      "source_status": "CURRENT"
+    },
+    {
+      "source_id": "topclass_sc_guidelines_2026",
+      "title": "Scheme Guidelines for 2026-27",
+      "url": "https://socialjustice.gov.in/writereaddata/UploadFile/81931782276781.pdf",
+      "document_type": "pdf",
+      "applicable_year": "2026-27",
+      "last_verified": "2026-08-19",
+      "retrieved_at": "2026-08-19T15:30:00+05:30",
+      "source_status": "CURRENT"
+    }
+  ],
+  "eligibility_criteria": [
+    {
+      "criterion_id": "sc_caste",
+      "name": "SC Caste Requirement",
+      "description": "Must belong to Scheduled Caste.",
+      "rule_type": "string",
+      "field": "caste",
+      "operator": "==",
+      "value": "SC",
+      "source_id": "topclass_sc_web_2026",
+      "source_section": "Brief overview",
+      "source_page": "1",
+      "applicable_year": "2026-27"
+    },
+    {
+      "criterion_id": "education_level",
+      "name": "Education Level",
+      "description": "Pursuing studies beyond 12th class.",
+      "rule_type": "boolean",
+      "field": "is_beyond_class_12",
+      "operator": "==",
+      "value": true,
+      "source_id": "topclass_sc_web_2026",
+      "source_section": "Brief overview",
+      "source_page": "1",
+      "applicable_year": "2026-27"
+    },
+    {
+      "criterion_id": "institution_empanelled",
+      "name": "Empanelled Institution",
+      "description": "Must study in an empanelled institution notified by the Ministry.",
+      "rule_type": "string",
+      "field": "is_empanelled_institution",
+      "operator": "==",
+      "value": "True",
+      "source_id": "topclass_sc_web_2026",
+      "source_section": "Brief overview",
+      "source_page": "1",
+      "applicable_year": "2026-27"
+    },
+    {
+      "criterion_id": "income_limit",
+      "name": "Income Limit",
+      "description": "Income threshold for eligibility.",
+      "rule_type": "numeric",
+      "field": "family_income",
+      "operator": "<=",
+      "value": 800000,
+      "source_id": "topclass_sc_guidelines_2026",
+      "source_section": "Eligibility",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2026-27"
+    }
+  ],
+  "required_documents": [
+    {
+      "document_id": "caste_certificate",
+      "name": "SC Caste Certificate",
+      "purpose": "Proof of caste.",
+      "mandatory": true,
+      "condition": "To verify SC status.",
+      "source_id": "topclass_sc_web_2026",
+      "source_section": "Brief overview",
+      "source_page": "1"
+    }
+  ],
+  "application_process": [
+    {
+      "step_id": "app_submit",
+      "description": "Submit application online.",
+      "authority": "NSP",
+      "source_id": "topclass_sc_web_2026",
+      "source_section": "Brief overview",
+      "source_page": "1"
+    }
+  ],
+  "rejection_reasons": [
+    {
+      "reason_id": "not_sc",
+      "description": "Applicant does not belong to Scheduled Caste.",
+      "related_criterion_id": "sc_caste",
+      "source_id": "topclass_sc_web_2026",
+      "source_section": "Brief overview",
+      "source_page": "1"
+    }
+  ],
+  "appeal_process": {
+    "available": "GRIEVANCE",
+    "route_type": "GRIEVANCE",
+    "authority": "Scheme Administrator",
+    "process": "Submit grievance.",
+    "deadline": "UNCERTAIN",
+    "source_id": "topclass_sc_guidelines_2026",
+    "source_section": "UNCERTAIN",
+    "source_page": "UNCERTAIN"
+  },
+  "authorities": [
+    {
+      "authority_id": "msje",
+      "name": "Ministry of Social Justice and Empowerment",
+      "role": "Scheme Administrator",
+      "source_id": "topclass_sc_web_2026"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "_warning": "TEST FIXTURE — NOT OFFICIAL DATA",
+  "scheme_id": "mock_scheme_001",
+  "scheme_name": "Mock Scheme for Pipeline Testing",
+  "department": "Department of Testing",
+  "academic_year": "2026-27",
+  "description": "This is a purely deterministic mock scheme used only for software testing.",
+  "official_sources": [
+    {
+      "source_id": "mock_source_1",
+      "title": "Mock Official Source Document",
+      "url": "https://example.gov.in/mock-guideline.pdf",
+      "document_type": "pdf",
+      "applicable_year": "2026-27",
+      "last_verified": "2026-08-19",
+      "retrieved_at": "2026-08-19T10:00:00Z",
+      "source_status": "CURRENT"
+    }
+  ],
+  "eligibility_criteria": [
+    {
+      "criterion_id": "mock_age_rule",
+      "name": "Age Requirement",
+      "description": "Applicant must be 18 or older.",
+      "rule_type": "numeric",
+      "field": "age",
+      "operator": ">=",
+      "value": 18,
+      "source_id": "mock_source_1",
+      "source_section": "Eligibility",
+      "source_page": "1"
+    },
+    {
+      "criterion_id": "mock_income_rule",
+      "name": "Income Limit",
+      "description": "Family income must be 250000 or less.",
+      "rule_type": "numeric",
+      "field": "income",
+      "operator": "<=",
+      "value": 250000,
+      "source_id": "mock_source_1",
+      "source_section": "Financial Criteria",
+      "source_page": "2"
+    },
+    {
+      "criterion_id": "mock_residency_rule",
+      "name": "Residency",
+      "description": "Must be resident of UP.",
+      "rule_type": "string",
+      "field": "state",
+      "operator": "==",
+      "value": "UP",
+      "source_id": "mock_source_1",
+      "source_section": "Residency",
+      "source_page": "1"
+    },
+    {
+      "criterion_id": "mock_malformed_rule",
+      "name": "Malformed Rule",
+      "description": "Rule to test error handling.",
+      "rule_type": "numeric",
+      "field": "points",
+      "operator": "MAGIC_OPERATOR",
+      "value": 100,
+      "source_id": "mock_source_1",
+      "source_section": "Testing",
+      "source_page": "3"
+    }
+  ],
+  "required_documents": [
+    {
+      "document_id": "income_certificate",
+      "name": "Income Certificate",
+      "purpose": "Verify income limit.",
+      "mandatory": true,
+      "condition": "Always",
+      "source_id": "mock_source_1",
+      "source_section": "Required Documents",
+      "source_page": "4"
+    }
+  ],
+  "application_process": [
+    {
+      "step_id": "mock_app_step",
+      "description": "Mock application closing.",
+      "authority": "Mock NSP",
+      "source_id": "mock_source_1",
+      "source_section": "Application",
+      "source_page": "1"
+    }
+  ],
+  "rejection_reasons": [
+    {
+      "reason_id": "mock_rej_income",
+      "description": "Income exceeds the permissible limit.",
+      "related_criterion_id": "mock_income_rule",
+      "source_id": "mock_source_1",
+      "source_section": "Rejections",
+      "source_page": "5"
+    }
+  ],
+  "appeal_process": {
+    "available": "FORMAL_APPEAL",
+    "authority": "Mock Appellate Authority",
+    "process": "Submit appeal online.",
+    "deadline": "30 days from rejection",
+    "source_id": "mock_source_1",
+    "source_section": "Appeals",
+    "source_page": "6"
+  },
+  "authorities": [
+    {
+      "name": "Department of Testing",
+      "role": "Administrator",
+      "source_id": "mock_source_1"
+    }
+  ]
+}

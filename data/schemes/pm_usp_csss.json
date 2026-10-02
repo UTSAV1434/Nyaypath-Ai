@@ -1,0 +1,169 @@
+{
+  "scheme_id": "pm_usp_csss",
+  "scheme_name": "PM-USP Central Sector Scheme of Scholarship for College and University Students (CSSS)",
+  "department": "Ministry of Education / Department of Higher Education",
+  "academic_year": "2026-27",
+  "description": "Merit Based Scheme for college and university students.",
+  "official_sources": [
+    {
+      "source_id": "pmusp_csss_nsp_2026",
+      "title": "National Scholarship Portal - Current Listing",
+      "url": "https://scholarships.gov.in/All-Scholarships",
+      "document_type": "web_page",
+      "applicable_year": "2026-27",
+      "last_verified": "2026-08-19",
+      "retrieved_at": "2026-08-19T15:30:00+05:30",
+      "source_status": "CURRENT"
+    },
+    {
+      "source_id": "pmusp_csss_faq_2025_26",
+      "title": "PRADHAN MANTRI UCHCHATAR SHIKSHA PROTSAHAN (PM-USP) CENTRAL SECTOR SCHEME OF SCHOLARSHIP FOR COLLEGE AND UNIVERSITY STUDENTS (CSSS) FREQUENTLY ASKED QUESTIONS (FAQs) 2025-26",
+      "url": "https://www.education.gov.in/sites/upload_files/mhrd/files/upload_document/FAQs_PM_USP_CSSS_scheme_AY_2025_26.pdf",
+      "document_type": "pdf",
+      "applicable_year": "2025-26",
+      "last_verified": "2026-08-19",
+      "retrieved_at": "2026-08-19T15:30:00+05:30",
+      "source_status": "HISTORICAL"
+    },
+    {
+      "source_id": "pmusp_csss_guidelines_2022_onwards",
+      "title": "GUIDELINES FOR THE CENTRAL SECTOR SCHEME OF SCHOLARSHIP FOR COLLEGE AND UNIVERSITY STUDENTS",
+      "url": "https://www.education.gov.in/sites/upload_files/mhrd/files/PM-USP_CSSS_GUIDELINES25.pdf",
+      "document_type": "pdf",
+      "applicable_year": "2022-23 onwards",
+      "last_verified": "2026-08-19",
+      "retrieved_at": "2026-08-19T15:30:00+05:30",
+      "source_status": "HISTORICAL"
+    }
+  ],
+  "eligibility_criteria": [
+    {
+      "criterion_id": "80th_percentile",
+      "name": "Class XII Percentile",
+      "description": "Students above the 80th percentile of successful candidates in the relevant stream from the respective Board in Class XII.",
+      "rule_type": "numeric",
+      "field": "class_12_percentile",
+      "operator": ">",
+      "value": 80,
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2025-26"
+    },
+    {
+      "criterion_id": "family_income",
+      "name": "Family Income",
+      "description": "Family income up to Rs. 4.5 lakh per annum.",
+      "rule_type": "numeric",
+      "field": "family_income",
+      "operator": "<=",
+      "value": 450000,
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2025-26"
+    },
+    {
+      "criterion_id": "regular_course",
+      "name": "Regular Course",
+      "description": "Students pursuing regular courses, not correspondence/distance mode.",
+      "rule_type": "string",
+      "field": "course_mode",
+      "operator": "==",
+      "value": "Regular",
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2025-26"
+    },
+    {
+      "criterion_id": "no_other_scholarship",
+      "name": "No Other Scholarship",
+      "description": "Student must not be receiving another scholarship or fee reimbursement of any kind.",
+      "rule_type": "boolean",
+      "field": "receiving_other_scholarship",
+      "operator": "==",
+      "value": false,
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2025-26"
+    },
+    {
+      "criterion_id": "no_diploma",
+      "name": "Diploma Exclusion",
+      "description": "Diploma students are not eligible.",
+      "rule_type": "boolean",
+      "field": "is_diploma_student",
+      "operator": "==",
+      "value": false,
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2025-26"
+    },
+    {
+      "criterion_id": "no_drop_year",
+      "name": "Drop Year Exclusion",
+      "description": "Students who took a drop after Class XII are not eligible.",
+      "rule_type": "boolean",
+      "field": "drop_after_12th",
+      "operator": "==",
+      "value": false,
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN",
+      "applicable_year": "2025-26"
+    }
+  ],
+  "required_documents": [
+    {
+      "document_id": "income_certificate",
+      "name": "Income Certificate",
+      "purpose": "Verify family income.",
+      "mandatory": true,
+      "condition": "If assessing family income criterion.",
+      "source_id": "pmusp_csss_guidelines_2022_onwards",
+      "source_section": "UNCERTAIN",
+      "source_page": "UNCERTAIN"
+    }
+  ],
+  "application_process": [
+    {
+      "step_id": "renewal",
+      "description": "Student application: 01-06-2026 to 31-10-2026. Defective application verification: 15-11-2026. Institute verification: 15-11-2026. L2/DNO/SNO/MNO verification: 30-11-2026.",
+      "authority": "NSP",
+      "source_id": "pmusp_csss_nsp_2026",
+      "source_section": "Application Schedule",
+      "source_page": "1"
+    }
+  ],
+  "rejection_reasons": [
+    {
+      "reason_id": "income_too_high",
+      "description": "Family income exceeds Rs. 4.5 lakh.",
+      "related_criterion_id": "family_income",
+      "source_id": "pmusp_csss_faq_2025_26",
+      "source_section": "Eligibility Criteria",
+      "source_page": "UNCERTAIN"
+    }
+  ],
+  "appeal_process": {
+    "available": "GRIEVANCE",
+    "route_type": "GRIEVANCE",
+    "authority": "Scheme-wise Grievance Redressal Officer",
+    "process": "Submit grievance via NSP portal / officer.",
+    "deadline": "UNCERTAIN",
+    "source_id": "pmusp_csss_nsp_2026",
+    "source_section": "Officers",
+    "source_page": "1"
+  },
+  "authorities": [
+    {
+      "authority_id": "moe_dhe",
+      "name": "Ministry of Education / Department of Higher Education",
+      "role": "Scheme Administrator",
+      "source_id": "pmusp_csss_guidelines_2022_onwards"
+    }
+  ]
+}
