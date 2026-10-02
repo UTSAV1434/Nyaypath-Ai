@@ -1,5 +1,7 @@
 # NyayaPath
 
+**Live App:** [NyayaPath · Streamlit](https://nyaypath-ai-3grktgjetgyzshm8gwwblm.streamlit.app/)
+
 NyayaPath is an AI-powered civic action copilot. It helps citizens understand rejected welfare or **scholarship applications** by extracting facts from rejection notices, allowing the citizen to confirm/edit those facts, and then deterministically checking those facts against a structured knowledge base to generate actionable next steps.
 
 ## How it works
