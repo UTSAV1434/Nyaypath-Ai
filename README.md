@@ -1,6 +1,6 @@
 # NyayaPath
 
-NyayaPath is an AI-powered civic action copilot. It helps citizens understand rejected welfare or scholarship applications by extracting facts from rejection notices, allowing the citizen to confirm/edit those facts, and then deterministically checking those facts against a structured knowledge base to generate actionable next steps.
+NyayaPath is an AI-powered civic action copilot. It helps citizens understand rejected welfare or **scholarship applications** by extracting facts from rejection notices, allowing the citizen to confirm/edit those facts, and then deterministically checking those facts against a structured knowledge base to generate actionable next steps.
 
 ## How it works
 
